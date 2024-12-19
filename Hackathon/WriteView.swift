@@ -26,6 +26,7 @@ struct WriteView: View {
             Spacer()
             Button("Post", action: {
                 text = ""
+                
                 dismiss()
             })
             .font(.largeTitle)
@@ -38,6 +39,14 @@ struct WriteView: View {
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
         }
         //.padding()
+    }
+    func savePostToUserDefaults(title: String, content: String) {
+        var posts = UserDefaults.standard.array(forKey: "posts") as? [[String: String]] ?? []
+        
+        let post = ["title": title, "content": content]
+        posts.append(post)
+        
+        UserDefaults.standard.set(posts, forKey: "posts")
     }
 }
 

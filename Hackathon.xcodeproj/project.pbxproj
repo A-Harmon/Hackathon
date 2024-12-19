@@ -16,6 +16,7 @@
 		037DABB52D1465BB002D4656 /* HackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABB42D1465BB002D4656 /* HackathonUITestsLaunchTests.swift */; };
 		037DABC62D147020002D4656 /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABC52D147020002D4656 /* Tweets.swift */; };
 		037DABC82D1471C9002D4656 /* Saving locally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABC72D1471C9002D4656 /* Saving locally.swift */; };
+		037DABCA2D147D4C002D4656 /* dataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABC92D147D4B002D4656 /* dataStorage.swift */; };
 		47CD183C2D146D5300920D00 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CD183B2D146D4200920D00 /* WriteView.swift */; };
 		47CD183E2D1475F700920D00 /* IndivualTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CD183D2D1475D900920D00 /* IndivualTweetView.swift */; };
 		B38662B12D1471B50023D636 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38662B02D1471B50023D636 /* ProfileView.swift */; };
@@ -51,6 +52,7 @@
 		037DABB42D1465BB002D4656 /* HackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		037DABC52D147020002D4656 /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
 		037DABC72D1471C9002D4656 /* Saving locally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saving locally.swift"; sourceTree = "<group>"; };
+		037DABC92D147D4B002D4656 /* dataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStorage.swift; sourceTree = "<group>"; };
 		47CD183B2D146D4200920D00 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		47CD183D2D1475D900920D00 /* IndivualTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndivualTweetView.swift; sourceTree = "<group>"; };
 		B38662B02D1471B50023D636 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				47CD183D2D1475D900920D00 /* IndivualTweetView.swift */,
 				47CD183B2D146D4200920D00 /* WriteView.swift */,
+				037DABC92D147D4B002D4656 /* dataStorage.swift */,
 				037DAB972D1465B9002D4656 /* HackathonApp.swift */,
 				037DAB992D1465B9002D4656 /* ContentView.swift */,
 				037DABC72D1471C9002D4656 /* Saving locally.swift */,
@@ -275,6 +278,7 @@
 				B38662B12D1471B50023D636 /* ProfileView.swift in Sources */,
 				037DAB9A2D1465B9002D4656 /* ContentView.swift in Sources */,
 				47CD183E2D1475F700920D00 /* IndivualTweetView.swift in Sources */,
+				037DABCA2D147D4C002D4656 /* dataStorage.swift in Sources */,
 				037DAB982D1465B9002D4656 /* HackathonApp.swift in Sources */,
 				47CD183C2D146D5300920D00 /* WriteView.swift in Sources */,
 				037DABC62D147020002D4656 /* Tweets.swift in Sources */,
