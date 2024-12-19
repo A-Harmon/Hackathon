@@ -29,7 +29,7 @@ struct ContentView: View {
                 
                 ScrollView{
                     if loadTweets {
-                        ForEach(tweets.shuffled(),id:\.self) {usr in
+                        ForEach(tweets.shuffled()) {usr in
                             NavigationLink(destination: ProfileView(user: usr), label: {
                                 IndivualTweetView(user: usr, tweet: usr.tweets[Int.random(in: 0...usr.tweets.count-1)])
                             })
