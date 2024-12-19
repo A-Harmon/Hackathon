@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var user : User = User(displayName: "Test", username: "Test", profilePicture: "Test", tweets: users[0].tweets)
+    @State var user : User = User(displayName: "Test", username: "Test", profilePicture: "Test", followers: 7000, tweets: users[0].tweets)
     @State var followers : Int = 500
     
     var followersAbr : String {
