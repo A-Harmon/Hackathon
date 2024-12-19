@@ -33,7 +33,7 @@ struct ContentView: View {
                         Divider()
                     }
                     .navigationDestination(for: User.self, destination: {user in
-                        ProfileView(user: users[users.firstIndex(where: {$0.username == user.username})!])
+                        ProfileView(userI: users.firstIndex(where: {$0.username == user.username})!)
                     })
                 }
                 .refreshable {

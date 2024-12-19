@@ -20,16 +20,16 @@ struct HackathonApp: App {
                     WriteView()
                 }
                 if view == "profile" {
-                    ProfileView(user: odysseus)
+                    ProfileView(userI: 0)
                 }
                 Spacer()
                 HStack {
                     Spacer()
-                    Button(action: {view="home"}, label: {Image(systemName: "house.fill").foregroundStyle(Color.main)})
+                    Button(action: {view="home"}, label: {Image(systemName: "house.fill").font(.title).foregroundStyle(Color.main)})
                     Spacer()
-                    Button(action: {view="newTweet"}, label: {Image(systemName: "plus.circle.fill").font(.title).foregroundStyle(Color.main)})
+                    Button(action: {view="newTweet"}, label: {Image(systemName: "plus.circle.fill").font(.largeTitle).foregroundStyle(Color.main)})
                     Spacer()
-                    Button(action: {view="profile"}, label: {Image(systemName: "person.fill").foregroundStyle(Color.main)})
+                    Button(action: {view="profile"}, label: {Image(systemName: "person.fill").font(.title).foregroundStyle(Color.main)})
                     Spacer()
                 }
                 .frame(maxWidth:.infinity,maxHeight: 50)

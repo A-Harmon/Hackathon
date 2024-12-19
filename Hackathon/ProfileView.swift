@@ -8,14 +8,16 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var user : User
+    @State var userI : Int
+    
+    @State var counter : Int = 0
     @State var followed : Bool = false
     
     var followersAbr : String {
-        var subFollowers = user.followers
+        var subFollowers = users[userI].followers
         
-        if (followed) {
-            subFollowers = user.followers + 1
+        if (users[userI].followed) {
+            subFollowers = users[userI].followers + 1
         }
         
         switch (subFollowers) {
@@ -36,18 +38,18 @@ struct ProfileView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(user.profilePicture)
+                Image(users[userI].profilePicture)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
                     .padding(.leading, 20)
                 VStack {
-                    Text(user.displayName)
+                    Text(users[userI].displayName)
                         .font(.title)
                         .bold()
                         .padding(.horizontal)
-                    Text("@\(user.username)")
+                    Text("@\(users[userI].username)")
                         .italic()
                         .foregroundStyle(Color.gray)
                 }
@@ -60,11 +62,12 @@ struct ProfileView: View {
             .padding(.top, 50)
             
             HStack {
-                if (followed) {
+                if (users[userI].followed || followed) {
                     Button(action: {
+                        users[userI].Follow()
                         followed.toggle()
                     }, label: {
-                        Text("Follow")
+                        Text("Followed")
                             .frame(maxWidth: .infinity, maxHeight: 50)
                             .foregroundStyle(Color.white)
                             .font(.title3)
@@ -77,6 +80,7 @@ struct ProfileView: View {
                     })
                 } else {
                     Button(action: {
+                        users[userI].Follow()
                         followed.toggle()
                     }, label: {
                         Text("Follow")
@@ -110,8 +114,8 @@ struct ProfileView: View {
             Divider()
             Spacer()
             ScrollView {
-                ForEach(user.tweets.reversed(), id: \.self) { tweet in
-                    IndivualTweetView(user: user, tweet: tweet)
+                ForEach(users[userI].tweets.reversed(), id: \.self) { tweet in
+                    IndivualTweetView(user: users[userI], tweet: tweet)
                         .padding(.bottom, 20)
                     Divider()
                 }
@@ -123,6 +127,6 @@ struct ProfileView: View {
     
 }
 
-#Preview {
-    ProfileView(user: users.first!)
-}
+//#Preview {
+//    ProfileView(userI: /*users.first!*/)
+//}
