@@ -44,6 +44,14 @@ struct WriteView: View {
         }
         .alert("Your post was posted succesfully!", isPresented: $alert, actions: {})
     }
+    func savePostToUserDefaults(title: String, content: String) {
+        var posts = UserDefaults.standard.array(forKey: "posts") as? [[String: String]] ?? []
+        
+        let post = ["title": title, "content": content]
+        posts.append(post)
+        
+        UserDefaults.standard.set(posts, forKey: "posts")
+    }
 }
 
 #Preview {
