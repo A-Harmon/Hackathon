@@ -100,3 +100,9 @@ public var users: [User] = [
         "Needed an Olympus-sized ego boost! Had a chat with the highest brass (read: @KingZeus) and got some HONEST HEART-TO-HEART advice Think my wings aren't held on by charisma alone My wings may waver, but my duties, on the other hand, are guaranteed 5/5 #MessengerSpirit #LessonLearned"
     ]),
 ]
+
+class Shared:ObservableObject {
+    static let shared = Shared()
+    private init(){}
+    @Published var reShowHome = false
+}

@@ -25,7 +25,7 @@ struct HackathonApp: App {
                 Spacer()
                 HStack {
                     Spacer()
-                    Button(action: {view="home"}, label: {Image(systemName: "house.fill").font(.title).foregroundStyle(Color.main)})
+                    Button(action: {view="home";Shared.shared.reShowHome = true}, label: {Image(systemName: "house.fill").font(.title).foregroundStyle(Color.main)})
                     Spacer()
                     Button(action: {view="newTweet"}, label: {Image(systemName: "plus.circle.fill").font(.largeTitle).foregroundStyle(Color.main)})
                     Spacer()

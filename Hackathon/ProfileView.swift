@@ -13,6 +13,10 @@ struct ProfileView: View {
     @State var counter : Int = 0
     @State var followed : Bool = false
     
+    @StateObject var shared = Shared.shared
+    
+    @Environment(\.dismiss) var dismiss
+    
     var followersAbr : String {
         var subFollowers = users[userI].followers
         
@@ -119,6 +123,12 @@ struct ProfileView: View {
                         .padding(.bottom, 20)
                     Divider()
                 }
+            }
+        }
+        .onChange(of: shared.reShowHome) {
+            if shared.reShowHome {
+                shared.reShowHome = false
+                dismiss()
             }
         }
     }
