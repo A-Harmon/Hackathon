@@ -118,10 +118,16 @@ struct ProfileView: View {
             Divider()
             Spacer()
             ScrollView {
-                ForEach(users[userI].tweets.reversed(), id: \.self) { tweet in
-                    IndivualTweetView(user: users[userI], tweet: tweet)
-                        .padding(.bottom, 20)
-                    Divider()
+                if (users[userI].username == "odysseus") {
+                    ForEach(odysseus.tweets.reversed(), id: \.self) { tweet in
+                        IndivualTweetView(user: users[userI], tweet: tweet)
+                    }
+                } else {
+                    ForEach(users[userI].tweets.reversed(), id: \.self) { tweet in
+                        IndivualTweetView(user: users[userI], tweet: tweet)
+                            .padding(.bottom, 20)
+                        Divider()
+                    }
                 }
             }
         }
