@@ -74,6 +74,8 @@ public let users: [User] = [
         "My beauty shines like the morning dew on a Greek isle, captivating hearts and souls with each tender glance. Irresistible, radiant, and forever divine. Goddess of love #GoddessVibes #LoveAtFirstSight",
         "It warms this mother's heart to see my daughter Piper weaving her charm and magic, captivating all who surround her with kindness and gentle persuasion. A true heir to my throne of love #GoddessFamily #PiperLove",
         "Oui, l'amour... It was I, Aphrodite, who wove the language of French, a tapestry of tender affection, passionate declarations, and whispered sweet nothings. No wonder the French call it the language of romance #FrenchForever #GoddessOfLove",
+        "Sunset stroll on the Elysian Fields, soft waves caressing the shore, and Hephaestus' tender touch on my hand. The perfect evening, crafted by the gods themselves, with a hint of mystique and a dash of divine love #LoveOfTheGods #GoddessLife",
+        "As I watch mortals declare their love, I see a spark of the divine in their hearts. Though fleeting, their passion is a gift from the gods. Perhaps one day, even they will understand the true power of love that only the gods can know #MortalLove #AphroditeSeesAll"
     ]),
     User(displayName: "Hercules", username: "hercules", profilePicture: "Hercules", followers: 165342, tweets: [
         "Did the 12 Labors in a row, from slaying the Nemean Lion to stealing the Golden Hesperides' apples. Learned discipline, hard work & humility on that journey. Glad I pushed myself & made it through, but a new adventure awaits! #HerculeanEgo #ChallengeComplete",
