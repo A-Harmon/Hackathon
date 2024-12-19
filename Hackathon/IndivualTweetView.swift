@@ -16,12 +16,16 @@ struct IndivualTweetView: View {
                     .resizable()
                     .frame(maxWidth:50,maxHeight: 50)
                     .clipShape(Circle())
-                Text(user.displayName).bold().font(.title2)
+                VStack(alignment: .leading) {
+                    Text(user.displayName).bold().font(.title2)
+                    Text("@\(user.username)")
+                }
                 Spacer()
             }
-            Divider()
+            Divider().hidden()
             Text(tweet)
         }
+        .padding(EdgeInsets(top: 0.0, leading: 5.0, bottom: 0, trailing: 5.0))
     }
 }
 

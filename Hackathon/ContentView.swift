@@ -7,10 +7,10 @@
 import SwiftUI
 import UIKit
 
-
-    struct ContentView: View {
-        
-        var body: some View {
+struct ContentView: View {
+    @State var tweets: [User] = []
+    var body: some View {
+        NavigationStack {
             VStack {
                 HStack{
                     Text("InstaGreek")
@@ -22,43 +22,30 @@ import UIKit
                     .font(.title2)
                 
                 ScrollView{
-                    
+                    ForEach(tweets.shuffled(),id:\.self) {usr in
+                        NavigationLink(destination: ProfileView(), label: {
+                            IndivualTweetView(user: usr, tweet: usr.tweets.randomElement()!)
+                        })
+                        .foregroundStyle(.black)
+                        Divider()
+                    }
+                }
+                .refreshable {
+                    tweets.removeAll()
+                    GetTweets()
                 }
             }
-            Spacer()
-        }
-        class PostsListViewController: UIViewController, UITableViewDataSource {
-            
-            @IBOutlet weak var tableView: UITableView!
-            
-            var posts = [[String: String]]()
-            
-            override func viewDidLoad() {
-                super.viewDidLoad()
-                
-                // Load saved posts from UserDefaults
-                loadPostsFromUserDefaults()
+            .onAppear {
+                GetTweets()
             }
-        
-        func loadPostsFromUserDefaults() {
-            posts = UserDefaults.standard.array(forKey: "posts") as? [[String: String]] ?? []
-            tableView.reloadData()
         }
-        
-        // UITableView DataSource Methods
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return posts.count
+    }
+    func GetTweets() {
+        for _ in 10...Int.random(in: 10...30) {
+            let usr = users.randomElement()!
+            tweets.append(usr)
         }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath)
-            let post = posts[indexPath.row]
-            
-            cell.textLabel?.text = post["title"]
-            cell.detailTextLabel?.text = post["content"]
-            
-            return cell
-        }
+        print(tweets)
     }
 }
 #Preview {
