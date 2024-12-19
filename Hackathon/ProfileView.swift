@@ -9,7 +9,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @State var user : User
-    @State var followers : Int = 500
+    @State var followers : Int = 0
     
     @State var followed : Bool = false
     
@@ -106,12 +106,15 @@ struct ProfileView: View {
             Divider()
             Spacer()
             ScrollView {
-                ForEach(user.tweets, id: \.self) { tweet in
+                ForEach(user.tweets.reversed(), id: \.self) { tweet in
                     IndivualTweetView(user: user, tweet: tweet)
                         .padding(.bottom, 20)
                     Divider()
                 }
             }
+        }
+        .onAppear {
+            followers = Int(user.followers)
         }
     }
     
