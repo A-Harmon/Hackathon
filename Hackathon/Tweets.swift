@@ -69,7 +69,7 @@ public let users: [User] = [
         "Just witnessed a mortal couple share a romantic kiss under the bright lights of Times Square. How quaint. Meanwhile, my marriage to Zeus is still being tested #GoddessOfLove #MortalRomance",
         "Just witnessed a mortal doing math on the subway, staring at a tiny screen as if their life depends on it. Meanwhile, Poseidon's trident controls the tides of the Hudson... priorities? #GoddessInTheBigApple #MortalObsessions"
     ]),
-    User(displayName: "Aphrodite", username: "aphrodite", profilePicture: "profile3.pg", followers: 1161136133, tweets: [
+    User(displayName: "Aphrodite", username: "aphrodite", profilePicture: "Aphrodite", followers: 1161136133, tweets: [
         "My darling Hephaestus, the master of fire and forge. Though unassuming, his heart beats with love for me & our love is stronger than any metal he crafts #LoveKnowsNoBounds #HusbandGoals",
         "My beauty shines like the morning dew on a Greek isle, captivating hearts and souls with each tender glance. Irresistible, radiant, and forever divine. Goddess of love #GoddessVibes #LoveAtFirstSight",
         "It warms this mother's heart to see my daughter Piper weaving her charm and magic, captivating all who surround her with kindness and gentle persuasion. A true heir to my throne of love #GoddessFamily #PiperLove",
