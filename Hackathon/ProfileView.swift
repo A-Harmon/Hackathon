@@ -8,11 +8,8 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var pic : String = "Zeus"
-    @State var name : String = "Zeus"
+    @State var user : User = User(displayName: "Test", username: "Test", profilePicture: "Test", tweets: users[0].tweets)
     @State var followers : Int = 500
-    
-    @State var tag : String = "ThatHotZeus"
     
     var followersAbr : String {
         switch (followers) {
@@ -25,24 +22,24 @@ struct ProfileView: View {
         default:
             return "\(followers)"
         }
-        
+
     }
     
     var body: some View {
         VStack {
             HStack {
-                Image(pic)
+                Image(user.profilePicture)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
                     .padding(.leading, 20)
                 VStack {
-                    Text(name)
+                    Text(user.displayName)
                         .font(.largeTitle)
                         .bold()
                         .padding(.horizontal)
-                    Text("@\(tag)")
+                    Text("@\(user.username)")
                         .italic()
                         .foregroundStyle(Color.gray)
                 }
@@ -69,8 +66,14 @@ struct ProfileView: View {
             Divider()
             
             Spacer()
+            ForEach(user.tweets, id: \.self) { tweet in
+                Text("\(tweet)")
+            }
         }
     }
+    
+    
+    
 }
 
 #Preview {
