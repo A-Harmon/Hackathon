@@ -44,7 +44,7 @@ struct ProfileView: View {
                     .padding(.leading, 20)
                 VStack {
                     Text(user.displayName)
-                        .font(.largeTitle)
+                        .font(.title)
                         .bold()
                         .padding(.horizontal)
                     Text("@\(user.username)")
