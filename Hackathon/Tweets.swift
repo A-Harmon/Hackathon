@@ -39,6 +39,7 @@ public var odysseus = User(displayName: "Odysseus", username: "odysseus", profil
 
 // Create a public array of User objects
 public var users: [User] = [
+    User(displayName: "Odysseus", username: "odysseus", profilePicture: "Odysseus", followers: 500, tweets: ["Currently thinking about getting on a Trojan Horse and invading Greek... will post lots of updates!"]),
     User(displayName: "Percy Jackson", username: "perseus", profilePicture: "Perseus", followers: 135000, tweets: [
         "Just tried to reason with Poseidon... turns out he's still mad about the whole 'minor flood' incident. Water you gonna do? #DemigodProblems #SeaGodProblems",
         "Current mood: I'm stuck in a mythological version of puberty, but with more gods arguing over who gets to control the world and less acne. #DemigodProbs #GreekYouth #TitanWar",
