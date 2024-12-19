@@ -47,7 +47,7 @@ public let users: [User] = [
         "Just had the most epic snack ever: ambrosia with fresh fruit! Don't @ me, but it's basically the only thing that can get me to deal with Atlas's sass #AmbrosiaLove #GodlySnacks",
         "Apparently, mortals think we're worried about ghosts and the boogeyman? Meanwhile, I've got monsters from Greek mythology trying to kill me on the reg #DemigodProblems #GhostSquad"
     ]),
-    User(displayName: "Zeus", username: "zeus", profilePicture: "Zeus", followers: 1567013, tweets: [
+    User(displayName: "Zeus", username: "zeus", profilePicture: "Zeus", followers: 1999999, tweets: [
         "Proud father moment: my demigod son Jason bravely pursues the Golden Fleece. His bravery is a shining example of the gods' heritage #GODSOFMTOWIELD",
         "Mortals! News from Olympus: Jason & Piper's love is as strong as a thunderbolt. May their adventure bring blessings from the gods! #GreekGods #SupernaturalLove",
         "My beloved wife & queen, Hera. Unyielding in her devotion, fierce in her protection. The envy of earthy wives, the reverence of the gods. #HeraTheQueen #Olympus",

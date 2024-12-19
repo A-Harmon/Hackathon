@@ -64,7 +64,7 @@ struct ProfileView: View {
                     Button(action: {
                         followed.toggle()
                     }, label: {
-                        Text("Follow")
+                        Text("Followed")
                             .frame(maxWidth: .infinity, maxHeight: 50)
                             .foregroundStyle(Color.white)
                             .font(.title3)
