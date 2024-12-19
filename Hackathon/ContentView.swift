@@ -25,9 +25,6 @@ struct ContentView: View {
                     
                     }
                 }
-                Text("Home")
-                    .font(.title2)
-                
                 ScrollView{
                     if loadTweets {
                         ForEach(tweets.shuffled()) {usr in
