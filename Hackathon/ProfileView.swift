@@ -64,7 +64,7 @@ struct ProfileView: View {
                     .padding(.horizontal, 10)
                 )
             })
-            .padding(.vertical)
+            .padding(.bottom)
             
             Divider()
             
