@@ -30,7 +30,12 @@ public let users: [User] = [
         "Just had to dodge a Cyclops in the parking lot at Camp Half-Blood. Because, you know, that's just a typical Tuesday morning. #DemigodProblems #CampHalfBlood #MonstersInMyBackyard",
         "Grover just got a new haircut... I'm pretty sure I saw a few dozen centaurs start a 'save his mane' petition. Maybe we should just get him a donkey #CentaursForGrover #HairdoHero",
         "Jason and Piper on a quest together is like a recipe for disaster... except the disaster is just really good entertainment. Don't tell them, but I'm live tweeting this for free therapy #DemigodDrama #QuestingCouple",
-        "Currently trying to enjoy a picnic with a demigod, a satyr, a daughter of Aphrodite, a centurion's daughter, and a son of Hephaestus... this is going to end well. #demigodlife #picnicfail"
+        "Currently trying to enjoy a picnic with a demigod, a satyr, a daughter of Aphrodite, a centurion's daughter, and a son of Hephaestus... this is going to end well. #demigodlife #picnicfail",
+        "Currently running for my life with the Chiron-approved Co-Pilot Annabeth (i.e. the smartest and most capable demigod I know), because who needs a sunny beach vacation, anyway? #godsproblems #demigodadventures",
+        "Just watched Jason and Piper bicker over who ate the last sandwich. Meanwhile, the Titans are still roaming free and I'm over here worrying about snacks #JasonAndPiper #DemigodDrama",
+        "Just got a package from my mom with a care package that includes BLUE COOKIES because what every demigod needs is a sugar rush to survive a quest #BlueCookiesForLife #MonsterKillingFuel",
+        "Just had the most epic snack ever: ambrosia with fresh fruit! Don't @ me, but it's basically the only thing that can get me to deal with Atlas's sass #AmbrosiaLove #GodlySnacks",
+        "Apparently, mortals think we're worried about ghosts and the boogeyman? Meanwhile, I've got monsters from Greek mythology trying to kill me on the reg #DemigodProblems #GhostSquad"
     ]),
     User(displayName: "Jane Smith", username: "jane_smith", profilePicture: "profile2.png", tweets: [
         "Exploring new places today!",
