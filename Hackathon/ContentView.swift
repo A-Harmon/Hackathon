@@ -16,7 +16,7 @@ struct ContentView: View {
                 HStack{
                     ZStack{
                         RoundedRectangle(cornerRadius: 30)
-                            .foregroundColor(.green)
+                            .foregroundColor(Color.main)
                             .frame(width: .infinity, height: 85)
                         Text("InstaGreek")
                             .font(Font.custom("Palatino", size: 50))

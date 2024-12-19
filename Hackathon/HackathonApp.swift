@@ -23,11 +23,11 @@ struct HackathonApp: App {
             Spacer()
             HStack {
                 Spacer()
-                Button(action: {view="home"}, label: {Image(systemName: "house.fill")})
+                Button(action: {view="home"}, label: {Image(systemName: "house.fill").foregroundStyle(Color.main)})
                 Spacer()
-                Button(action: {view="newTweet"}, label: {Image(systemName: "plus.circle.fill").font(.title)})
+                Button(action: {view="newTweet"}, label: {Image(systemName: "plus.circle.fill").font(.title).foregroundStyle(Color.main)})
                 Spacer()
-                Button(action: {view="profile"}, label: {Image(systemName: "person.fill")})
+                Button(action: {view="profile"}, label: {Image(systemName: "person.fill").foregroundStyle(Color.main)})
                 Spacer()
             }
             .frame(maxWidth:.infinity,maxHeight: 50)
