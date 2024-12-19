@@ -26,6 +26,15 @@ struct ProfileView: View {
             return "\(followers)"
         }
         
+        var tweets : [String] {
+            for user in users {
+                if user.username == tag {
+                    return user.tweets
+                }
+            }
+            return []
+        }
+        
     }
     
     var body: some View {
@@ -69,6 +78,9 @@ struct ProfileView: View {
             Divider()
             
             Spacer()
+//            ForEach(tweets, id: \.self) {
+//                Text("Hi")
+//            }
         }
     }
 }
