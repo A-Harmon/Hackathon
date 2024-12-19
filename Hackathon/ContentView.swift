@@ -13,10 +13,15 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 HStack{
-                    Text("InstaGreek")
-                        .font(.largeTitle)
-                        .bold()
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 30)
+                            .foregroundColor(.green)
+                            .frame(width: .infinity, height: 85)
+                        Text("InstaGreek")
+                            .font(Font.custom("Palatino", size: 50))
+                            .bold()
                     
+                    }
                 }
                 Text("Home")
                     .font(.title2)
