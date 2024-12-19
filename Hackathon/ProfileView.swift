@@ -9,7 +9,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @State var user : User
-    @State var followers : Int = 500
+    @State var followers : Int = 0
     
     @State var followed : Bool = false
     
@@ -63,9 +63,11 @@ struct ProfileView: View {
                         Text("Follow")
                             .frame(maxWidth: .infinity, maxHeight: 50)
                             .foregroundStyle(Color.white)
-                            .font(.headline)
+                            .font(.title3)
+                            .bold()
                             .background(
                                 RoundedRectangle(cornerRadius: 50, style: .circular)
+                                    .foregroundStyle(Color.main)
                                     .padding(.horizontal, 10)
                             )
                     })
@@ -75,11 +77,12 @@ struct ProfileView: View {
                     }, label: {
                         Text("Follow")
                             .frame(maxWidth: .infinity, maxHeight: 50)
-                            .foregroundStyle(Color.accentColor)
-                            .font(.headline)
+                            .foregroundStyle(Color.main)
+                            .font(.title3)
+                            .bold()
                             .background(
                                 RoundedRectangle(cornerRadius: 50, style: .circular)
-                                    .strokeBorder(lineWidth: 2)
+                                    .strokeBorder(Color.main, lineWidth: 2)
                                     .padding(.horizontal, 10)
                             )
                     })
@@ -103,12 +106,15 @@ struct ProfileView: View {
             Divider()
             Spacer()
             ScrollView {
-                ForEach(user.tweets, id: \.self) { tweet in
+                ForEach(user.tweets.reversed(), id: \.self) { tweet in
                     IndivualTweetView(user: user, tweet: tweet)
                         .padding(.bottom, 20)
                     Divider()
                 }
             }
+        }
+        .onAppear {
+            followers = Int(user.followers)
         }
     }
     

@@ -23,7 +23,9 @@ struct IndivualTweetView: View {
                 Spacer()
             }
             Divider().hidden()
-            Text(tweet)
+            Text("\t\(tweet)")
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal, 10)
         }
         .padding(EdgeInsets(top: 0.0, leading: 5.0, bottom: 0, trailing: 5.0))
     }
