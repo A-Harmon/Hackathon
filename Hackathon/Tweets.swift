@@ -57,7 +57,7 @@ public let users: [User] = [
         "No wonder the Greeks love me: Nectar and ambrosia in abundance, yet my true weakness lies with... Olympian BBQ. Sizzling mead-glazed offerings, straight from Mount Olympus's finest cooking gods. Now that's divine! #GodlyGrub #ZeusApproved",
         "My favorite dish: Golden apples from the Garden of the Hesperides, served with a side of ambrosial honey. A feast fit for a king (of the gods, of course!) #GreekGods #FavoriteDish"
     ]),
-    User(displayName: "Hera", username: "hera", profilePicture: "profile3.png", followers: 113, tweets: [
+    User(displayName: "Hera", username: "hera", profilePicture: "Hera", followers: 113, tweets: [
         "Disloyalty runs deep in Mount Olympus. Once again, my trust has been broken. Zeus, king of the gods, thinks he's above the law #GoddessJealousy #LoyalHera",
         "No divine dish is as divine as ambrosia cake! Rich, decadent, and made with the finest nectar, it's the perfect treat for a goddess like me #GoddessCuisine #AmbrosiaCake",
         "No mortal can escape my mighty powers! I rule over childbirth, marriage, and childbirth - claiming the loyalty of all women in ancient Greece #GoddessPower #MaternalProtection",
