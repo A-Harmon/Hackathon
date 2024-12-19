@@ -18,6 +18,7 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 30)
                             .foregroundColor(Color.main)
                             .frame(width: .infinity, height: 85)
+                            .padding(.horizontal)
                         Text("InstaGreek")
                             .font(Font.custom("Palatino", size: 50))
                             .bold()
@@ -29,7 +30,7 @@ struct ContentView: View {
                 
                 ScrollView{
                     if loadTweets {
-                        ForEach(tweets.shuffled(),id:\.self) {usr in
+                        ForEach(tweets.shuffled()) {usr in
                             NavigationLink(destination: ProfileView(user: usr), label: {
                                 IndivualTweetView(user: usr, tweet: usr.tweets[Int.random(in: 0...usr.tweets.count-1)])
                             })

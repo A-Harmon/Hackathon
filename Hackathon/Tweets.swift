@@ -7,12 +7,13 @@
 import Foundation
 
 // Define a public struct for the User
-public struct User:Hashable {
+public struct User:Hashable,Identifiable {
     public let displayName: String
     public let username: String
     public let profilePicture: String  // This could be a URL or an image name/path
     public let followers: Int64
     public var tweets: [String]
+    public var id = UUID()
 
     // Initializer is needed to allow public access to the struct's properties
     public init(displayName: String, username: String, profilePicture: String, followers: Int64, tweets: [String]) {
