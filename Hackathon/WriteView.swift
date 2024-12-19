@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct WriteView: View {
-    @State var text = "Nice, very amazing."
+    @State var text = ""
     
     @Environment(\.dismiss) var dismiss
     var body: some View {
