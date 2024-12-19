@@ -11,6 +11,8 @@ struct ProfileView: View {
     @State var user : User
     @State var followers : Int = 500
     
+    @State var followed : Bool = false
+    
     var followersAbr : String {
         switch (followers) {
         case 1000000000..<1000000000000:
@@ -24,6 +26,8 @@ struct ProfileView: View {
         }
 
     }
+    
+//    @State var likeStatus : Bool = false
     
     var body: some View {
         VStack {
@@ -51,22 +55,57 @@ struct ProfileView: View {
             }
             .padding(.top, 50)
             
-            Button(action: {}, label: {
-                Text("Follow")
-                    .frame(maxWidth: .infinity, maxHeight: 50)
-                    .foregroundStyle(Color.white)
-                    .font(.headline)
-                    .background(
-                RoundedRectangle(cornerRadius: 50, style: .circular)
-                    .padding(.horizontal, 10)
-                )
-            })
+            HStack {
+                if (followed) {
+                    Button(action: {
+                        followed.toggle()
+                    }, label: {
+                        Text("Follow")
+                            .frame(maxWidth: .infinity, maxHeight: 50)
+                            .foregroundStyle(Color.white)
+                            .font(.headline)
+                            .background(
+                                RoundedRectangle(cornerRadius: 50, style: .circular)
+                                    .padding(.horizontal, 10)
+                            )
+                    })
+                } else {
+                    Button(action: {
+                        followed.toggle()
+                    }, label: {
+                        Text("Follow")
+                            .frame(maxWidth: .infinity, maxHeight: 50)
+                            .foregroundStyle(Color.accentColor)
+                            .font(.headline)
+                            .background(
+                                RoundedRectangle(cornerRadius: 50, style: .circular)
+                                    .strokeBorder(lineWidth: 2)
+                                    .padding(.horizontal, 10)
+                            )
+                    })
+                }
+                
+//                Button {
+//                    likeStatus.toggle()
+//                } label: {
+//                    Image(systemName: (likeStatus ? "heart.fill" : "heart"))
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .foregroundStyle(Color.red)
+//                        .padding(.horizontal, 10)
+//                        .padding(.trailing, 10)
+//                }
+//                .animation(.easeIn, value: likeStatus)
+
+            }
             .padding(.bottom)
             
             Divider()
+            Spacer()
             ScrollView {
                 ForEach(user.tweets, id: \.self) { tweet in
                     IndivualTweetView(user: user, tweet: tweet)
+                        .padding(.bottom, 20)
                     Divider()
                 }
             }
