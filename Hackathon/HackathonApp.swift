@@ -15,10 +15,10 @@ struct HackathonApp: App {
                 ContentView()
             }
             if view == "newTweet" {
-                ContentView()
+                WriteView()
             }
             if view == "profile" {
-                ContentView()
+                ProfileView()
             }
             Spacer()
             HStack {
