@@ -14,6 +14,7 @@ public struct User:Hashable,Identifiable {
     public let followers: Int64
     public var tweets: [String]
     public var id = UUID()
+    public var followed : Bool = false
 
     // Initializer is needed to allow public access to the struct's properties
     public init(displayName: String, username: String, profilePicture: String, followers: Int64, tweets: [String]) {
@@ -28,12 +29,16 @@ public struct User:Hashable,Identifiable {
     mutating func NewTweet(_ new: String) {
         tweets.append(new)
     }
+    
+    mutating func Follow() {
+        followed.toggle()
+    }
 }
 
 public var odysseus = User(displayName: "Odysseus", username: "odysseus", profilePicture: "Odysseus", followers: 500, tweets: ["Currently thinking about getting on a Trojan Horse and invading Greek... will post lots of updates!"])
 
 // Create a public array of User objects
-public let users: [User] = [
+public var users: [User] = [
     User(displayName: "Percy Jackson", username: "perseus", profilePicture: "Perseus", followers: 135000, tweets: [
         "Just tried to reason with Poseidon... turns out he's still mad about the whole 'minor flood' incident. Water you gonna do? #DemigodProblems #SeaGodProblems",
         "Current mood: I'm stuck in a mythological version of puberty, but with more gods arguing over who gets to control the world and less acne. #DemigodProbs #GreekYouth #TitanWar",
