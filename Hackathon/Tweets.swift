@@ -69,7 +69,7 @@ public let users: [User] = [
         "Just witnessed a mortal couple share a romantic kiss under the bright lights of Times Square. How quaint. Meanwhile, my marriage to Zeus is still being tested #GoddessOfLove #MortalRomance",
         "Just witnessed a mortal doing math on the subway, staring at a tiny screen as if their life depends on it. Meanwhile, Poseidon's trident controls the tides of the Hudson... priorities? #GoddessInTheBigApple #MortalObsessions"
     ]),
-    User(displayName: "Aphrodite", username: "aphrodite", profilePicture: "profile3.pg", followers: 1161136133, tweets: [
+    User(displayName: "Aphrodite", username: "aphrodite", profilePicture: "Aphrodite", followers: 1161136133, tweets: [
         "My darling Hephaestus, the master of fire and forge. Though unassuming, his heart beats with love for me & our love is stronger than any metal he crafts #LoveKnowsNoBounds #HusbandGoals",
         "My beauty shines like the morning dew on a Greek isle, captivating hearts and souls with each tender glance. Irresistible, radiant, and forever divine. Goddess of love #GoddessVibes #LoveAtFirstSight",
         "It warms this mother's heart to see my daughter Piper weaving her charm and magic, captivating all who surround her with kindness and gentle persuasion. A true heir to my throne of love #GoddessFamily #PiperLove",
@@ -81,7 +81,7 @@ public let users: [User] = [
         "Nothing says 'divine' like a game of ping pong? Just took down Athena in a best-of-5 on Mount Olympus's ping pong court. Not just a hero's strength, but a hero's reflexes. Don't mess with the 12-time labor-winning champion! #PingPongGuru #GodModeActive",
         "Eggs? Really? Can't they see how overrated they are?! Scrambled, fried, poached... no shade, but I'd take a Hydra's fiery breath any day. Don't get the hype, folks. The 12 Labors were a breeze compared to swallowing another omelette #EggHater #HerculeanHunger",
         "The truth about the 12 Labors. Some say King Eurystheus bullied me into it, but the real reason I did it was to prove that even a demigod can be human. To show that with enough sweat, blood, and toil, anyone can achieve greatness, even when it seems impossible #HerculesOfHumility #TheTrue12Labors",
-        "Even Aphrodite's radiant goddess beauty can't compare to the stunning loveliness of my wife, Megara. Her strength, heart, and charm have captivated me since the moment I met her. She's the true goddess in my eyes #HerculesMadlyInLove #GoddessOfMyHeart"
-        
+        "Even Aphrodite's radiant goddess beauty can't compare to the stunning loveliness of my wife, Megara. Her strength, heart, and charm have captivated me since the moment I met her. She's the true goddess in my eyes #HerculesMadlyInLove #GoddessOfMyHeart",
+        "Just a fun fact: did you know my sacred number is 12? From the 12 Labors to my 12 virtues, that number holds a special place in my heart It's a nod to the cycles of the universe and the hero's journey, reminding me to strive for balance #HerculeanVirtues #SacredNumber"
     ]),
 ]
