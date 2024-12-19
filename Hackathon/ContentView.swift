@@ -24,9 +24,6 @@ struct ContentView: View {
                     
                     }
                 }
-                Text("Home")
-                    .font(.title2)
-                
                 ScrollView{
                     ForEach(tweets.shuffled()) {usr in
                         NavigationLink(value: usr, label: {

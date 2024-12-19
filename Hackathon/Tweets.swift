@@ -86,4 +86,12 @@ public let users: [User] = [
         "Even Aphrodite's radiant goddess beauty can't compare to the stunning loveliness of my wife, Megara. Her strength, heart, and charm have captivated me since the moment I met her. She's the true goddess in my eyes #HerculesMadlyInLove #GoddessOfMyHeart",
         "Just a fun fact: did you know my sacred number is 12? From the 12 Labors to my 12 virtues, that number holds a special place in my heart It's a nod to the cycles of the universe and the hero's journey, reminding me to strive for balance #HerculeanVirtues #SacredNumber"
     ]),
+    User(displayName: "Hermes The Messenger", username: "Hermes", profilePicture: "Hermes", followers: 236422, tweets: [
+        "Just delivered a message from Zeus to Poseidon Quick as lightning, swift as the wind I am the messenger god, after all! #Hermes #MessengerLife",
+        "Mission at hand... Carry a vital message from Poseidon to Zeus Just took off with the olympic wind beneath my wings Wish me luck... or speed! 1/5 #MessengerLife #HermesOnTheJob #GodlyDelivery",
+        "Uh-oh! Caught in a medusarowkey mist #GAUGE squall tore the wind from under my wings My hands have the message, but ACHILLES' giant eagle friend... seems to have other plans 2/5 #MessageLost #MessengerMishap",
+        "Wet yet grateful Just found the remains of the torn envelope from @Poseidon2Ocean's precious missive in the Underestimated rain. Hope it's only just a little damp... and Poseidon didn't quite... rewrite the terms of our agreement 3/5 #GodLifeCrises #LostAndFound",
+        "Just had to rip the Band-Aid Opened the envelope and my heart sank RT Poseidon's opinion on my delivery skills 1/ I'm not worthy of my wings 2/ My feet are mere undependables Honestly... I think I need a minute... 4/5 #MessageHuge Oops #MessengerBlunders",
+        "Needed an Olympus-sized ego boost! Had a chat with the highest brass (read: @KingZeus) and got some HONEST HEART-TO-HEART advice Think my wings aren't held on by charisma alone My wings may waver, but my duties, on the other hand, are guaranteed 5/5 #MessengerSpirit #LessonLearned"
+    ]),
 ]
