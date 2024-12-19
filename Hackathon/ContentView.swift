@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     var body: some View {
@@ -20,7 +21,7 @@ struct ContentView: View {
                 .font(.title2)
             
             ScrollView{
-                Text("Put posts here")
+                
             }
         }
         Spacer()
