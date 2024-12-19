@@ -5,15 +5,12 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     var body: some View {
         VStack {
             HStack{
-                Image("horse")
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                    .frame(width: 100, height: 100)
-                    .padding()
                 Text("InstaGreek")
                     .font(.largeTitle)
                     .bold()
