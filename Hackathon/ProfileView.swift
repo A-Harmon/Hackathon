@@ -2,7 +2,6 @@
 //  ProfileView.swift
 //  Hackathon
 //
-//  Created by Benjamin Scotti on 12/19/24.
 //
 
 import SwiftUI
@@ -12,6 +11,9 @@ struct ProfileView: View {
     @State var pic : String = "Zeus"
     @State var name : String = "Zeus"
     @State var followers : Int = 500
+    
+    @State var tag : String = "ThatHotZeus"
+    
     var followersAbr : String {
         switch (followers) {
         case 1000000000..<1000000000000:
@@ -35,10 +37,15 @@ struct ProfileView: View {
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
                     .padding(.leading, 20)
-                Text(name)
-                    .font(.largeTitle)
-                    .bold()
-                    .padding()
+                VStack {
+                    Text(name)
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.horizontal)
+                    Text("@\(tag)")
+                        .italic()
+                        .foregroundStyle(Color.gray)
+                }
                 Spacer()
                 Text("\(followersAbr)")
                     .font(.largeTitle)
@@ -46,6 +53,20 @@ struct ProfileView: View {
                     .padding(.trailing, 20)
             }
             .padding(.top, 50)
+            
+            Button(action: {}, label: {
+                Text("Follow")
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .foregroundStyle(Color.white)
+                    .font(.headline)
+                    .background(
+                RoundedRectangle(cornerRadius: 50, style: .circular)
+                    .padding(.horizontal, 10)
+                )
+            })
+            .padding(.vertical)
+            
+            Divider()
             
             Spacer()
         }
