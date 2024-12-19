@@ -21,7 +21,7 @@ struct WriteView: View {
                     .clipShape(Circle())
                     .padding(.horizontal)
                 Text("Wants to say: ")
-                    .font(.largeTitle)
+                    .font(Font.custom("Palatino", size: 30))
                 Spacer()
             }
             TextEditor(text: $text)
