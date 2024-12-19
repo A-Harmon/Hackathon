@@ -22,9 +22,11 @@ struct WriteView: View {
                 Spacer()
             }
             TextEditor(text: $text)
+                .border(Color.gray)
                 .textFieldStyle(.roundedBorder)
                 //.foregroundStyle(.white)
                 .multilineTextAlignment(.leading)
+                .padding()
             Spacer()
             Button("Post", action: {
                 if text != "" {
@@ -39,6 +41,7 @@ struct WriteView: View {
             .frame(maxWidth:.infinity,maxHeight: 100)
             .background{
                 RoundedRectangle(cornerRadius: 25)
+                    .foregroundStyle(Color.main)
             }
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
         }
