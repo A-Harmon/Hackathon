@@ -43,6 +43,7 @@ struct ProfileView: View {
                 Text("\(followersAbr)")
                     .font(.largeTitle)
                     .bold()
+                    .padding(.trailing, 20)
             }
             .padding(.top, 50)
             
