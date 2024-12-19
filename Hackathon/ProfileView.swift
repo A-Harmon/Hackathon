@@ -63,9 +63,11 @@ struct ProfileView: View {
                         Text("Follow")
                             .frame(maxWidth: .infinity, maxHeight: 50)
                             .foregroundStyle(Color.white)
-                            .font(.headline)
+                            .font(.title3)
+                            .bold()
                             .background(
                                 RoundedRectangle(cornerRadius: 50, style: .circular)
+                                    .foregroundStyle(Color.main)
                                     .padding(.horizontal, 10)
                             )
                     })
@@ -75,11 +77,12 @@ struct ProfileView: View {
                     }, label: {
                         Text("Follow")
                             .frame(maxWidth: .infinity, maxHeight: 50)
-                            .foregroundStyle(Color.accentColor)
-                            .font(.headline)
+                            .foregroundStyle(Color.main)
+                            .font(.title3)
+                            .bold()
                             .background(
                                 RoundedRectangle(cornerRadius: 50, style: .circular)
-                                    .strokeBorder(lineWidth: 2)
+                                    .strokeBorder(Color.main, lineWidth: 2)
                                     .padding(.horizontal, 10)
                             )
                     })
