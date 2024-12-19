@@ -9,20 +9,24 @@ import SwiftUI
 struct ProfileView: View {
     
     @State var user : User
-    @State var followers : Int = 0
-    
     @State var followed : Bool = false
     
     var followersAbr : String {
-        switch (followers) {
+        var subFollowers = user.followers
+        
+        if (followed) {
+            subFollowers = user.followers + 1
+        }
+        
+        switch (subFollowers) {
         case 1000000000..<1000000000000:
-            return "\(followers/1000000000)B"
+            return "\(subFollowers/1000000000)B"
         case 1000000..<1000000000:
-            return "\(followers/1000000)M"
+            return "\(subFollowers/1000000)M"
         case 1000..<1000000:
-            return "\(followers/1000)K"
+            return "\(subFollowers/1000)K"
         default:
-            return "\(followers)"
+            return "\(subFollowers)"
         }
 
     }
@@ -112,9 +116,6 @@ struct ProfileView: View {
                     Divider()
                 }
             }
-        }
-        .onAppear {
-            followers = Int(user.followers)
         }
     }
     
