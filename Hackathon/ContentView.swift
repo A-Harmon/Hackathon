@@ -31,12 +31,15 @@ struct ContentView: View {
                 ScrollView{
                     if loadTweets {
                         ForEach(tweets.shuffled()) {usr in
-                            NavigationLink(destination: ProfileView(user: usr), label: {
+                            NavigationLink(value: usr.id, label: {
                                 IndivualTweetView(user: usr, tweet: usr.tweets[Int.random(in: 0...usr.tweets.count-1)])
                             })
                             .foregroundStyle(.black)
                             Divider()
                         }
+                        .navigationDestination(for: UUID.self, destination: {id in
+                            ProfileView(user: users[users.firstIndex(where: {$0.id == id})!])
+                        })
                     }
                 }
                 .refreshable {
