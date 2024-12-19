@@ -19,6 +19,9 @@ struct WriteView: View {
                     .resizable()
                     .frame(maxWidth:75,maxHeight: 75)
                     .clipShape(Circle())
+                    .padding(.horizontal)
+                Text("Wants to say: ")
+                    .font(.largeTitle)
                 Spacer()
             }
             TextEditor(text: $text)
@@ -26,8 +29,7 @@ struct WriteView: View {
                 .textFieldStyle(.roundedBorder)
                 //.foregroundStyle(.white)
                 .multilineTextAlignment(.leading)
-                .padding()
-            Spacer()
+                .padding(.horizontal)
             Button("Post", action: {
                 if text != "" {
                     odysseus.NewTweet(text)
@@ -43,7 +45,7 @@ struct WriteView: View {
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundStyle(Color.main)
             }
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+            .padding(.horizontal, 10)
         }
         .alert("Your post was posted succesfully!", isPresented: $alert, actions: {})
     }
