@@ -2,13 +2,14 @@
 //  WriteView.swift
 //  Hackathon
 //
-//  Created by Christopher Leonard on 12/19/24.
 //
 
 import SwiftUI
 
 struct WriteView: View {
     @State var text = "Nice, very amazing."
+    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
             HStack {
@@ -21,17 +22,20 @@ struct WriteView: View {
             TextEditor(text: $text)
                 .textFieldStyle(.roundedBorder)
                 //.foregroundStyle(.white)
-                .multilineTextAlignment(.center)
-                .overlay {
-                    VStack {
-                        Text(text)
-                            .foregroundStyle(.blue)
-                            .multilineTextAlignment(.center)
-                        .padding(EdgeInsets(top: 8, leading: 0, bottom: 0, trailing: 0))
-                        Spacer()
-                    }
-                }
+                .multilineTextAlignment(.leading)
             Spacer()
+            Button("Post", action: {
+                text = ""
+                dismiss()
+            })
+            .font(.largeTitle)
+            .bold()
+            .foregroundStyle(.white)
+            .frame(maxWidth:.infinity,maxHeight: 100)
+            .background{
+                RoundedRectangle(cornerRadius: 25)
+            }
+            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
         }
         //.padding()
     }

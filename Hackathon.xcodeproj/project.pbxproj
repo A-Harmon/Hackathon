@@ -14,9 +14,8 @@
 		037DABA92D1465BB002D4656 /* HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABA82D1465BB002D4656 /* HackathonTests.swift */; };
 		037DABB32D1465BB002D4656 /* HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABB22D1465BB002D4656 /* HackathonUITests.swift */; };
 		037DABB52D1465BB002D4656 /* HackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABB42D1465BB002D4656 /* HackathonUITestsLaunchTests.swift */; };
-		47CD183C2D146D5300920D00 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CD183B2D146D4200920D00 /* WriteView.swift */; };
-		037DABC42D146FA5002D4656 /* horse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 037DABC32D146FA5002D4656 /* horse.jpeg */; };
 		037DABC62D147020002D4656 /* Tweets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037DABC52D147020002D4656 /* Tweets.swift */; };
+		47CD183C2D146D5300920D00 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CD183B2D146D4200920D00 /* WriteView.swift */; };
 		B38662B12D1471B50023D636 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38662B02D1471B50023D636 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +47,8 @@
 		037DABAE2D1465BB002D4656 /* HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037DABB22D1465BB002D4656 /* HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITests.swift; sourceTree = "<group>"; };
 		037DABB42D1465BB002D4656 /* HackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		47CD183B2D146D4200920D00 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
-		037DABC32D146FA5002D4656 /* horse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = horse.jpeg; path = ../../../Downloads/horse.jpeg; sourceTree = "<group>"; };
 		037DABC52D147020002D4656 /* Tweets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweets.swift; sourceTree = "<group>"; };
+		47CD183B2D146D4200920D00 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		B38662B02D1471B50023D636 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +106,6 @@
 				B38662B02D1471B50023D636 /* ProfileView.swift */,
 				037DABC52D147020002D4656 /* Tweets.swift */,
 				037DAB9B2D1465BB002D4656 /* Assets.xcassets */,
-				037DABC32D146FA5002D4656 /* horse.jpeg */,
 				037DAB9D2D1465BB002D4656 /* Preview Content */,
 			);
 			path = Hackathon;
@@ -245,7 +242,6 @@
 			files = (
 				037DAB9F2D1465BB002D4656 /* Preview Assets.xcassets in Resources */,
 				037DAB9C2D1465BB002D4656 /* Assets.xcassets in Resources */,
-				037DABC42D146FA5002D4656 /* horse.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
