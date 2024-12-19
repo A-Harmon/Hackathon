@@ -18,7 +18,7 @@ struct HackathonApp: App {
                 WriteView()
             }
             if view == "profile" {
-                ProfileView()
+                ProfileView(user: odysseus)
             }
             Spacer()
             HStack {
