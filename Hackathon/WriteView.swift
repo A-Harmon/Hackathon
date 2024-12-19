@@ -9,6 +9,8 @@ import SwiftUI
 struct WriteView: View {
     @State var text = ""
     
+    @State var alert = false
+    
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
@@ -25,8 +27,11 @@ struct WriteView: View {
                 .multilineTextAlignment(.leading)
             Spacer()
             Button("Post", action: {
-                text = ""
-                dismiss()
+                if text != "" {
+                    odysseus.NewTweet(text)
+                    text = ""
+                    alert = true
+                }
             })
             .font(.largeTitle)
             .bold()
@@ -37,7 +42,7 @@ struct WriteView: View {
             }
             .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
         }
-        //.padding()
+        .alert("Your post was posted succesfully!", isPresented: $alert, actions: {})
     }
 }
 

@@ -12,7 +12,7 @@ public struct User:Hashable {
     public let username: String
     public let profilePicture: String  // This could be a URL or an image name/path
     public let followers: Int64
-    public let tweets: [String]
+    public var tweets: [String]
 
     // Initializer is needed to allow public access to the struct's properties
     public init(displayName: String, username: String, profilePicture: String, followers: Int64, tweets: [String]) {
@@ -22,7 +22,14 @@ public struct User:Hashable {
         self.followers = followers
         self.tweets = tweets
     }
+    
+    // Adds new tweets
+    mutating func NewTweet(_ new: String) {
+        tweets.append(new)
+    }
 }
+
+public var odysseus = User(displayName: "Odysseus", username: "odysseus", profilePicture: "Odysseus", followers: 500, tweets: ["Currently thinking about getting on a Trojan Horse and invading Greek... will post lots of updates!"])
 
 // Create a public array of User objects
 public let users: [User] = [
@@ -39,7 +46,7 @@ public let users: [User] = [
         "Just had the most epic snack ever: ambrosia with fresh fruit! Don't @ me, but it's basically the only thing that can get me to deal with Atlas's sass #AmbrosiaLove #GodlySnacks",
         "Apparently, mortals think we're worried about ghosts and the boogeyman? Meanwhile, I've got monsters from Greek mythology trying to kill me on the reg #DemigodProblems #GhostSquad"
     ]),
-    User(displayName: "Zeus", username: "zeus", profilePicture: "profile2.png", followers: 1567013, tweets: [
+    User(displayName: "Zeus", username: "zeus", profilePicture: "Zeus", followers: 1567013, tweets: [
         "Proud father moment: my demigod son Jason bravely pursues the Golden Fleece. His bravery is a shining example of the gods' heritage #GODSOFMTOWIELD",
         "Mortals! News from Olympus: Jason & Piper's love is as strong as a thunderbolt. May their adventure bring blessings from the gods! #GreekGods #SupernaturalLove",
         "My beloved wife & queen, Hera. Unyielding in her devotion, fierce in her protection. The envy of earthy wives, the reverence of the gods. #HeraTheQueen #Olympus",
@@ -49,7 +56,7 @@ public let users: [User] = [
         "No wonder the Greeks love me: Nectar and ambrosia in abundance, yet my true weakness lies with... Olympian BBQ. Sizzling mead-glazed offerings, straight from Mount Olympus's finest cooking gods. Now that's divine! #GodlyGrub #ZeusApproved",
         "My favorite dish: Golden apples from the Garden of the Hesperides, served with a side of ambrosial honey. A feast fit for a king (of the gods, of course!) #GreekGods #FavoriteDish"
     ]),
-    User(displayName: "Hera", username: "hera", profilePicture: "profile3.png", followers: 113, tweets: [
+    User(displayName: "Hera", username: "hera", profilePicture: "Hera", followers: 113, tweets: [
         "Disloyalty runs deep in Mount Olympus. Once again, my trust has been broken. Zeus, king of the gods, thinks he's above the law #GoddessJealousy #LoyalHera"
     ]),
 ]

@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State var user : User = User(displayName: "Test", username: "Test", profilePicture: "Test", tweets: users[0].tweets)
+    @State var user : User
     @State var followers : Int = 500
     
     var followersAbr : String {
@@ -64,10 +64,11 @@ struct ProfileView: View {
             .padding(.bottom)
             
             Divider()
-            
-            Spacer()
-            ForEach(user.tweets, id: \.self) { tweet in
-                Text("\(tweet)")
+            ScrollView {
+                ForEach(user.tweets, id: \.self) { tweet in
+                    IndivualTweetView(user: user, tweet: tweet)
+                    Divider()
+                }
             }
         }
     }
@@ -77,5 +78,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: users.first!)
 }
