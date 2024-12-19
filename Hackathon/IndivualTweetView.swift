@@ -12,7 +12,7 @@ struct IndivualTweetView: View {
     var body: some View {
         VStack {
             HStack {
-                Image("Odysseus")
+                Image(user.profilePicture)
                     .resizable()
                     .frame(maxWidth:50,maxHeight: 50)
                     .clipShape(Circle())

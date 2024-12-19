@@ -23,8 +23,8 @@ struct ContentView: View {
                 
                 ScrollView{
                     ForEach(tweets.shuffled(),id:\.self) {usr in
-                        NavigationLink(destination: ProfileView(), label: {
-                            IndivualTweetView(user: usr, tweet: usr.tweets.randomElement()!)
+                        NavigationLink(destination: ProfileView(user: usr), label: {
+                            IndivualTweetView(user: usr, tweet: usr.tweets[Int.random(in: 0...usr.tweets.count-1)])
                         })
                         .foregroundStyle(.black)
                         Divider()
