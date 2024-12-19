@@ -7,7 +7,7 @@
 import Foundation
 
 // Define a public struct for the User
-public struct User {
+public struct User:Hashable {
     public let displayName: String
     public let username: String
     public let profilePicture: String  // This could be a URL or an image name/path
