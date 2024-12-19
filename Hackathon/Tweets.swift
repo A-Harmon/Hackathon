@@ -74,7 +74,7 @@ public let users: [User] = [
         "It warms this mother's heart to see my daughter Piper weaving her charm and magic, captivating all who surround her with kindness and gentle persuasion. A true heir to my throne of love #GoddessFamily #PiperLove",
         "Oui, l'amour... It was I, Aphrodite, who wove the language of French, a tapestry of tender affection, passionate declarations, and whispered sweet nothings. No wonder the French call it the language of romance #FrenchForever #GoddessOfLove",
     ]),
-    User(displayName: "Hercules", username: "hercules", profilePicture: "profile3.pg", followers: 165342, tweets: [
+    User(displayName: "Hercules", username: "hercules", profilePicture: "Hercules", followers: 165342, tweets: [
         "Did the 12 Labors in a row, from slaying the Nemean Lion to stealing the Golden Hesperides' apples. Learned discipline, hard work & humility on that journey. Glad I pushed myself & made it through, but a new adventure awaits! #HerculeanEgo #ChallengeComplete",
         "Life after death has its perks! Sipping ambrosia with the gods, strolling through the Elysian Fields, and swapping war stories with the 'good' souls. My current favorite pastime: arm wrestling with Theseus. Still undefeated, of course. #ElysianLife #GodOfGSaintlyAleness",
         "Nothing says 'divine' like a game of ping pong? Just took down Athena in a best-of-5 on Mount Olympus's ping pong court. Not just a hero's strength, but a hero's reflexes. Don't mess with the 12-time labor-winning champion! #PingPongGuru #GodModeActive",
