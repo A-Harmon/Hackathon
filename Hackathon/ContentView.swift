@@ -56,7 +56,7 @@ struct ContentView: View {
         loadTweets = false
         for x in 10...Int.random(in: 20...40) {
             let usr = users[Int.random(in: 0...users.count-1)]
-            tweets.append(usr)
+            tweets.append(User(displayName: usr.displayName, username: usr.username, profilePicture: usr.profilePicture, followers: usr.followers, tweets: usr.tweets))
         }
         loadTweets = true
     }
